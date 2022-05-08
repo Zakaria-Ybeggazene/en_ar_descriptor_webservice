@@ -17,7 +17,7 @@ name="EnArDescriptorService">
     </message>
 
     <portType name="describeArabic">
-        <operation name="arabicDescription">
+        <operation name="describeArabic">
             <input message="tns:EnArDescriptorRequest"></input>
             <output message="tns:EnArDescriptorResponse"></output>
             <fault name="wordNotFound" message="FaultMessage"/>
@@ -42,7 +42,7 @@ name="EnArDescriptorService">
 
     <service name="EnArDescriptorService">
         <port name="EnArDescriptorPort" binding="tns:EnArDescriptorPortBinding">
-            <soap:address location="http://localhost:8000/custom_webservice/index.php"></soap:address>
+            <soap:address location="http://localhost:8000/index.php"></soap:address>
         </port>
     </service>
 </definitions>

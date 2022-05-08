@@ -17,7 +17,7 @@ function describeArabic( $word ){
 }
 
 //créer un serveur
-$server = new SOAPServer("en_ar_descriptor.wsdl");
+$server = new SoapServer("en_ar_descriptor.wsdl");
 
 //ajouter une opération au serveur
 $server->addFunction("describeArabic");
